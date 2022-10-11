@@ -1,0 +1,44 @@
+ === Comandos Unix ===
+ Link github: https://gist.github.com/luizomf/6a57d2c7f93624ea92fe1c3bc8f7243b
+
+
+ Para utilizar no MAC, só executar o terminal
+ ------------------------------------------------------------
+
+ Para utilizar no Windows, é preciso utilizar o wsl2 e
+ instalar uma versão linux para acompanhar.
+
+ video: https://youtu.be/05YN8F8ajBc e depois
+ configure seu terminal com ZSH:
+ Video: https://youtu.be/y-w-gamp4U0
+
+-------------------------------------------------------------
+
+sudo: Ele pede uma senha para poder elevar
+os privilegios do usuário.
+
+=== Navegação ===
+
+pwd: Mostra o caminho do diretorio atual.
+
+ls: Lista tudo que está no diretorio atual.
+
+ls -l: Lista o que está dentro do diretorio de uma forma
+mais longa, propriedade das pastas.
+
+ls -a: Lista os arquivos Ocultos também.
+
+ls -h: Mostra o tamanho do arquivos/diretorio. Podendo
+utilizar os comandos agregados também.
+
+Exemplo: ls -lah
+
+cd - Change Directory: utilizado para ir para outra pasta/Diretorio.
+cd ..: eu volto para o diretorio anterior.
+
+
+
+=== Outros comandos ===
+whoami: Mostra o nome do seu usuário.
+hostname: Mostra o nome da máquina.
+uname: mostra dados sobre o sistema.
