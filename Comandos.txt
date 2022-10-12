@@ -122,6 +122,70 @@ rm -R nomedoDiretorio
 
 === Operadores Uteis ===
 
+; Permite executar vários comandos de uma vez.
+
+Exemplo:
+mkdir -p Diretorio/Subpasta/Subpastadasubpasta/Outrapasta ; tree Diretorio
+
+
+Utilizando o ; ele executa a linha de comandos sequentes mesmo
+se um dos comandos apresentar o erro.
+
+&&: permite executar vários comandos de uma vez, porém
+se um dos comandos apresentar um erro ele para a execução.
+
+||: Ele executa o proximo comando SE o comando anterior apresentar
+erro.
+
+> : Para jogar o resultado em um arquivo.. como se fosse um log.
+Exemplo: ls > Saida-do-ls.txt
+
+>>: Colocando dois >> ele adiciona no arquivo ja existente.
+
+Exemplo: ls | grep ".mp4" >> saida-do-ls.txt
+
+
+
+=== Background e Foreground ===
+
+Como criar um processo em background.. Executar um comando em
+backgroud.
+
+Para adicionar um processo 
+sleep 5000 &: o & que queria o processo.
+
+jobs: lista os processos.
+
+fg %2: trás o processo que está suspenso pois necessita 
+que a tela esteja aberta.
+ctrl + z para voltar ele para background.
+
+Kill %2: eu Deleto o processo.
+
+kill -tstp %1: Pausa o processo.
+kill -CONT %1: Continua o processo.
+
+kill -l: mostra todos os comandos que podem ser utilizados
+com kill.
+
+=== Outros Comandos ===
+
+file + o nome do arquivo: eu mostro as informações
+de que tipo de arquivo é esse.
+
+history: mostra todos os comandos utilizados.
+
+uname -a: Mostra os dados sobre o sistema.
+
+ps aux: mostra os processos que estão sendo executados no momento.
+
+pkill: Ele mata um processo.
+Exemplo: pkill -f "photoshop"
+
+
+
+
+
 
 
 
