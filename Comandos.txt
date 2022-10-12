@@ -33,6 +33,14 @@ utilizar os comandos agregados também.
 
 Exemplo: ls -lah
 
+Posso utilizar o comando 
+ls -l que lista tudo, adicionando o pipe | grep nomedoarquivo,
+ele me trás somente o arquivo selecionado.
+Ou seja.. ele primeiro lista tudo que tem dentro do diretorio,
+adiciona dentro do grep que funcionaria como se fosse um filtro
+e ai sim ele me mostra o que eu quero, que no caso é o nomedoarquivo
+ou diretorio.
+
 cd - Change Directory: utilizado para ir para outra pasta/Diretorio.
 cd ..: eu volto para o diretorio anterior.
 
@@ -40,5 +48,82 @@ cd ..: eu volto para o diretorio anterior.
 
 === Outros comandos ===
 whoami: Mostra o nome do seu usuário.
+
 hostname: Mostra o nome da máquina.
+
 uname: mostra dados sobre o sistema.
+
+nano: utilizado para editar textos.
+ a seta pra cima significa: (ctrl).
+
+tree: mostra a arvore do diretorio atual.. 
+tudo que tem dentro das pasta.
+
+Tree -d -L 2: Mostra apenas a arvore dos diretorios e 2 pastas
+subsequentes.
+
+
+=== Para ler um arquivos ===
+
+cat -n nomedoarquivo.txt: Faz a leitura do arquivos
+com as quantidades de linha.
+
+tail nomedoarquivo.txt: Faz a leitura do arquivos porém
+com as ultimas linhas..
+
+tail -f nomedoarquivo.txt: Bastante utilizado para
+ler log, Pois ele continua aberto conforme for salvando
+o arquivo ele já mostra as ultimas linhas automaticamente.
+ctrl+c: você sai da leitura do arquivo com tail.
+
+wc: Utilizado para ler linhas, caracteres e palavras.
+
+wc -l: Ler linhas
+wc -m: Ler caracteres
+wc -w: Ler palavras
+
+
+=== Manipulação de arquivos ===
+
+Caminho relativo:
+cp nomedoarquivo.txt Desktop/: Para copiar um arquivo
+para outro local, eu eu utilizo o cp + nomedoarquivo e 
+adiciono o caminho aonde quero a cópia.
+
+Posso também realizar o caminha absoluto:
+cp /users/Lucas/nomedoarquivo.txt /User/Lucas/Desktop/OutroNome.txt
+
+
+mkdir: Este comando cria um diretorio.
+
+mkdir -p Diretorio/Subpasta/Subpastadasubpasta/Outrapasta:
+Utilizando o -p ele cria uma pasta dentro da outra.
+
+mkdir -p Diretorio/Subpasta/Subpastadasubpasta/{pasta dentro da Subpastadasubpasta}
+Colocando a pasta/{} você cria pasta dentro da pasta.
+
+mv: Mover arquivo para outro diretorio e renomeia também.
+Ele funciona do mesmo formato do cp.
+
+mv nome-da-pasta NOVAPASTA: utilizando este comando eu renomeei 
+a pasta.
+
+cp -R novapasta Copiadenovapasta: para copiar um diretorio
+é preciso coloar o -r para ele copiar a pasta e subpasta
+
+rm: Apaga arquivo e diretorios.
+
+Apagar um arquivo:
+rm nomedoarquivo.txt
+
+Apagar um diretorio:
+rm -R nomedoDiretorio
+
+
+=== Operadores Uteis ===
+
+
+
+
+
+
